@@ -15,6 +15,17 @@ this library also supports key management, digital signatures, and message verif
 pip install eccx
 ```
 
+## Quickstart
+if you want to use the shitty cli i made (using rich lol, everything else uses just cryptography) you can get
+```python
+from eccx import cli
+cli()
+```
+alternatively, you can do it all yourself with the classes
+```python
+from eccx import ECKeyManager, ECSignature, ECHybridEncryption
+```
+
 ### Prerequisites
 - cryptography (44.0.0 reccomended)
 - rich (13.7.1 reccomended)
